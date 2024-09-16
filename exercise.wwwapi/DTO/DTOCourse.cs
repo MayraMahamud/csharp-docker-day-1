@@ -1,20 +1,15 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace exercise.wwwapi.DataModels
+namespace exercise.wwwapi.DTO
 {
-    [Table("course")]
-
-    public class Course
+    public class DTOCourse
     {
-        [Column("id")]
-
         public int Id { get; set; }
-        [Column("coursetitle")]
+       
 
         public string CourseTitle { get; set; }
-        [Column("coursedescription")]
+       
 
         public string CourseDescription { get; set; }
-
     }
 }
